@@ -8,7 +8,11 @@ import language_data from "@/data-test/data.json"
 import home from "@/icons/home.png"
 import Image from "next/image";
 
-export default function Header(language: string) {
+
+interface HeaderProps {
+    lan: string
+}
+export default function Header({ lan }: HeaderProps) {
     return (
         <div>
             <NavigationMenu className="p-2">
@@ -21,6 +25,7 @@ export default function Header(language: string) {
                             >
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     <img src="@/icons/home.png"/>
+                                    <p>{language_data.home[lan as keyof typeof language_data.home] || language_data.home.en}</p>
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>

@@ -1,0 +1,39 @@
+{
+    "supports": ["ar", "de", "en", "ja", "ko", "no", "ru"],
+    "home": {
+        "en": "Home",
+        "ar": "الصفحة الرئيسية",
+        "de": "Startseite",
+        "ja": "ホーム",
+        "ko": "홈",
+        "no": "Hjem",
+        "ru": "Главная"
+    },
+    "psswrd_tempter": {
+        "ar": "أولاً، نود مساعدتك في تحسين كلمة المرور الخاصة بك، وللقيام بذلك يجب عليك إدخالها في الحقل أدناه:",
+        "de": "Zuerst möchten wir Ihnen helfen, Ihr Passwort zu verbessern. Dafür müssen Sie es unten eingeben:",
+        "en": "First, I we would like to help you improve your password, and to do that you must enter your password in the input below:",
+        "no": "Først vil vi gjerne hjelpe deg med å forbedre passordet ditt, og for å gjøre det må du skrive inn passordet ditt i feltet nedenfor:",
+        "ja": "まず、パスワードを強化するお手伝いをさせていただきます。そのために、下の入力欄にパスワードを入力してください。",
+        "ko": "먼저 비밀번호를 강화할 수 있도록 도와드리겠습니다. 그렇게 하려면 아래 입력란에 비밀번호를 입력해 주세요.",
+        "ru": "Сначала мы хотим помочь вам улучшить ваш пароль, и для этого вы должны ввести его в поле ниже:"
+    },
+    "password_input": {
+        "en": "password",
+        "ar": "كلمة المرور",
+        "de": "Passwort",
+        "ja": "パスワード",
+        "ko": "비밀번호",
+        "no": "passord",
+        "ru": "пароль"
+    },
+    "test_failed": {
+        "en": "You failed the test, NEVER give your password out if someone asks you to. They are likely trying to get access to your accounts. Keep your passwords unique from account to account and be ready.",
+        "ar": "لقد فشلت في الاختبار، لا تعطي كلمة مرورك لأي شخص يطلبها. من المحتمل أنهم يحاولون الوصول إلى حساباتك. اجعل كلمات مرورك فريدة لكل حساب وكن مستعدًا.",
+        "de": "Du hast den Test nicht bestanden. Gib dein Passwort NIEMALS heraus, wenn dich jemand danach fragt. Wahrscheinlich versuchen sie, auf deine Konten zuzugreifen. Verwende für jedes Konto ein einzigartiges Passwort und sei vorbereitet.",
+        "ja": "テストに失敗しました。誰かに頼まれても絶対にパスワードを教えないでください。アカウントに不正アクセスしようとしている可能性があります。各アカウントで異なるパスワードを使い、備えておきましょう。",
+        "ko": "당신은 테스트에 실패했습니다. 누군가 비밀번호를 요구해도 절대 알려주지 마세요. 그들은 당신의 계정에 접근하려는 의도일 수 있습니다. 계정마다 고유한 비밀번호를 사용하고 항상 대비하세요.",
+        "no": "Du strøk på testen – ALDRI gi fra deg passordet ditt hvis noen ber om det. De prøver sannsynligvis å få tilgang til kontoene dine. Ha unike passord for hver konto, og vær forberedt.",
+        "ru": "Вы провалили тест. НИКОГДА не сообщайте свой пароль, если кто-то его просит. Скорее всего, они пытаются получить доступ к вашим аккаунтам. Используйте уникальные пароли для каждого аккаунта и будьте начеку."
+    }
+}

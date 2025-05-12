@@ -4,8 +4,11 @@ import Link from "next/link";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "./navigation-menu";
 import { ThemeToggle } from "./theme-toggle";
 import { Separator } from "./separator";
+import language_data from "@/data-test/data.json"
+import home from "@/icons/home.png"
+import Image from "next/image";
 
-export default function Header() {
+export default function Header(language: string) {
     return (
         <div>
             <NavigationMenu className="p-2">
@@ -17,9 +20,7 @@ export default function Header() {
                             legacyBehavior passHref
                             >
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    <image 
-                                    
-                                    />
+                                    <img src="@/icons/home.png"/>
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>

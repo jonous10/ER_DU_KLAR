@@ -1,18 +1,28 @@
-version: '3.8'
+version: "3.8"
 services:
+  redis:
+    image: redis:alpine
+    container_name: redis-backend
+    command: ["redis-server", "--requirepass", "password"]
+    expose:
+      - "6379"
+    ports:
+      - "6379:6379"
+    networks:
+      - overlay
+
   web:
     build: .
+    container_name: nextjs-app
     ports:
-      - "3000:3000"
+      - "3000:3000"  # Expose port 3000
     depends_on:
       - redis
     environment:
-      - REDIS_URL=redis://redis:6379
-    volumes:
-      - .:/app
-    command: npm run dev
+      - NODE_ENV=production
+    networks:
+      - overlay
 
-  redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"
+networks:
+  overlay:
+    driver: bridge

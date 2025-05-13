@@ -38,22 +38,23 @@ async function apiCall(endpoint: string, { method = 'GET', body, query, headers 
     return response.json();
 }
 
-export async function create_user(username: string, password: string) {
-    return apiCall('create_user', {
-        method: 'POST',
-        body: { username, password }
-    });
-}
 
-export async function login(username: string, password: string) {
-    return apiCall('login', {
-        method: 'POST',
-        body: { username, password }
-    });
-}
 export async function GetLanguageSup(seg: string, lan: string) {
     return apiCall('get_language', {
         method: 'GET',
-        body: { seg, lan }
+        query: { seg, lan }
     })
+}
+
+export async function SaveToRedis(data: string) {
+  return apiCall('save-to-redis', {
+    method: 'POST',
+    body: { data },
+  });
+}
+
+export async function GetFromRedis() {
+  return apiCall('get-from-redis', {
+    method: 'GET',
+  });
 }

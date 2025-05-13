@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
 import { useState } from 'react';
+import { SaveToRedis, GetFromRedis } from '@/api/language'; // Adjust this import path as needed
 
 const RedisTestPage = () => {
   const [inputData, setInputData] = useState('');
@@ -8,57 +9,38 @@ const RedisTestPage = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Function to handle input data change
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputData(event.target.value);
   };
 
-  // Function to handle the form submission and save data to Redis
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-
     if (!inputData) return;
 
     setIsLoading(true);
     setError(null);
 
     try {
-      // Assuming Redis is being exposed via an API (e.g., Next.js API route)
-      const response = await fetch('/api/save-to-redis', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ data: inputData }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to save data to Redis');
-      }
-
-      // Reset input field after successful submission
+      const result = await SaveToRedis(inputData);
+      alert(result.message || 'Data saved!');
       setInputData('');
-      alert('Data saved to Redis!');
     } catch (err) {
+      console.error(err);
       setError('An error occurred while saving data.');
     } finally {
       setIsLoading(false);
     }
   };
 
-  // Function to fetch data from Redis and display it
   const handleFetchData = async () => {
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch('/api/get-from-redis');
-      if (!response.ok) {
-        throw new Error('Failed to fetch data from Redis');
-      }
-      const data = await response.json();
-      setStoredData(data);
+      const result = await GetFromRedis();
+      setStoredData(result.data || null);
     } catch (err) {
+      console.error(err);
       setError('An error occurred while fetching data.');
     } finally {
       setIsLoading(false);

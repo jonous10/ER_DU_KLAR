@@ -1,5 +1,5 @@
 const BASE_URL = process.env.NEXT_PUBLIC_DATABASE_IP || "http://localhost:4000";
-const apiBase = `${BASE_URL}/api/v1/games`;
+const apiBase = `${BASE_URL}/api/v1/users`;
 
 interface ApiCallOptions {
     method?: string;
@@ -38,22 +38,22 @@ async function apiCall(endpoint: string, { method = 'GET', body, query, headers 
     return response.json();
 }
 
-export async function getPlayerCount(appid: number) {
-    return apiCall(`get_player_count/${appid}`)
-}
-export async function getSteamGame(search: string) {
-    return apiCall(`search_steam/${search}`)
-}
-export async function fillGameData() {
-    return apiCall('fill_game_data', {
-        method: 'POST'
-    })
-}
-export async function getAllGames() {
-    return apiCall('get_all_games')
+export async function create_user(username: string, password: string) {
+    return apiCall('create_user', {
+        method: 'POST',
+        body: { username, password }
+    });
 }
 
-export async function getGameDetails(appid: string | undefined) {
-    if (appid === undefined) return
-    return apiCall(`get_game_details/${appid}`)
+export async function login(username: string, password: string) {
+    return apiCall('login', {
+        method: 'POST',
+        body: { username, password }
+    });
+}
+export async function GetLanguageSup(seg: string, lan: string) {
+    return apiCall('get_language', {
+        method: 'GET',
+        body: { seg, lan }
+    })
 }

@@ -56,6 +56,3 @@ export async function logout() {
         method: 'POST'
     })
 }
-export async function fetchCarData(kjennemerke: string) {
-    return apiCall(`search_reg/${encodeURIComponent(kjennemerke)}`);
-}

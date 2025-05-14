@@ -10,6 +10,7 @@ interface ApiCallOptions {
 
 async function apiCall(endpoint: string, { method = 'GET', body, query, headers }: ApiCallOptions = {}) {
     let url = `${apiBase}/${endpoint}`;
+    console.log(url)
 
     if (query && Object.keys(query).length > 0) {
         const queryParams = new URLSearchParams();

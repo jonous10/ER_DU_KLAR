@@ -1,5 +1,5 @@
 const BASE_URL = process.env.NEXT_PUBLIC_DATABASE_IP || "http://localhost:4000";
-const apiBase = `${BASE_URL}/api/v1/users`;
+const apiBase = `${BASE_URL}/api/v1/language`;
 
 interface ApiCallOptions {
     method?: string;
@@ -46,15 +46,18 @@ export async function GetLanguageSup(seg: string, lan: string) {
     })
 }
 
-export async function SaveToRedis(data: string) {
+export async function SaveToRedis(key: string, data: string) {
+    console.log("savedtoredis")
   return apiCall('save-to-redis', {
     method: 'POST',
-    body: { data },
+    body: { key, data },
   });
 }
 
-export async function GetFromRedis() {
+export async function GetFromRedis(key: string) {
+    console.log("getfromredis")
   return apiCall('get-from-redis', {
     method: 'GET',
+    query: { key },
   });
 }

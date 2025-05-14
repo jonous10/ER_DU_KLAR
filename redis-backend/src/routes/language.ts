@@ -1,3 +1,5 @@
+"use client"
+
 import { NextFunction, Request, Response, Router } from 'express';
 import { redisClient } from '../redis-source';
 
@@ -39,25 +41,33 @@ router.get(
 // ----------- POST /save-to-redis -----------
 router.post('/save-to-redis', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { data } = req.body;
+    const { key, data } = req.body;
 
     if (!data) {
       return res.status(400).json({ error: 'Missing "data" in request body.' });
     }
 
-    await redisClient.set('myDataKey', data);
+    await redisClient.set(key, data);
     return res.status(200).json({ message: 'Data saved to Redis.' });
   } catch (err) {
     next(err);
   }
 });
 
-// ----------- GET /get-from-redis -----------
-router.get('/get-from-redis', async (_req: Request, res: Response, next: NextFunction) => {
+// ----------- POST /get-from-redis -----------
+router.get('/get-from-redis', async (req: Request, res: Response, next: NextFunction) => {
+  console.log("BACKEND START")
   try {
-    const data = await redisClient.get('myDataKey');
+    const { key } = req.query;
+
+    if (!key || typeof key !== 'string') {
+      return res.status(400).json({ error: 'A valid "key" is required in the request body.' });
+    }
+
+    const data = await redisClient.get(key);
+    console.log(data)
     if (!data) {
-      return res.status(404).json({ error: 'No data found in Redis.' });
+      return res.status(404).json({ error: 'No data found in Redis for the provided key.' });
     }
 
     return res.status(200).json({ data });
@@ -65,5 +75,7 @@ router.get('/get-from-redis', async (_req: Request, res: Response, next: NextFun
     next(err);
   }
 });
+
+
 
 export default router;

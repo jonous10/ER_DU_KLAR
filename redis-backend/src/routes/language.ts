@@ -76,6 +76,22 @@ router.get('/get-from-redis', async (req: Request, res: Response, next: NextFunc
   }
 });
 
+router.get('/get-test-json', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const redisKey = 'test:json';
 
+    const jsonData = await redisClient.get(redisKey);
+
+    if (!jsonData) {
+      return res.status(404).json({ error: `No data found for key "${redisKey}".` });
+    }
+
+    const parsedData = JSON.parse(jsonData);
+
+    return res.status(200).json({ data: parsedData });
+  } catch (err) {
+    return next(err);
+  }
+});
 
 export default router;

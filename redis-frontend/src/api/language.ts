@@ -61,3 +61,10 @@ export async function GetFromRedis(key: string) {
     query: { key },
   });
 }
+
+export async function GetTestJSON() {
+    console.log("gettestJSON")
+  return apiCall('get-test-json', {
+    method: 'GET',
+  });
+}

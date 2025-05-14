@@ -1,6 +1,6 @@
 "use client";
 
-import { GetLanguageSup, SaveToRedis, GetFromRedis } from "@/api/language";
+import { GetLanguageSup, SaveToRedis, GetFromRedis, GetTestJSON } from "@/api/language";
 import { useState } from "react";
 
 export default function Home() {
@@ -26,6 +26,8 @@ export default function Home() {
         console.log(res)
       })}
       >GET FROM REDIS</button>
+
+      <button onClick={GetTestJSON}>GET TEST JSON</button>
     </div>
   );
 }

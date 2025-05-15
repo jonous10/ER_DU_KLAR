@@ -9,10 +9,7 @@ import image from "@/images/politiet.png"
 import Image from "next/image";
 
 
-interface HeaderProps {
-    lan: string
-}
-export default function Header({ lan }: HeaderProps) {
+export default function Header() {
     return (
         <div>
             <NavigationMenu className="p-2">
@@ -35,8 +32,8 @@ export default function Header({ lan }: HeaderProps) {
 
                         <NavigationMenuItem className="ml-auto mr-0">
                             <div className="flex flex-row gap-4">
-                                <SettingsPopover/>
                                 <AccountPopover/>
+                                <SettingsPopover/>
                             </div>
                         </NavigationMenuItem>
                     </NavigationMenuList>

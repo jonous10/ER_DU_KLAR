@@ -35,5 +35,14 @@
         "ko": "당신은 테스트에 실패했습니다. 누군가 비밀번호를 요구해도 절대 알려주지 마세요. 그들은 당신의 계정에 접근하려는 의도일 수 있습니다. 계정마다 고유한 비밀번호를 사용하고 항상 대비하세요.",
         "no": "Du strøk på testen – ALDRI gi fra deg passordet ditt hvis noen ber om det. De prøver sannsynligvis å få tilgang til kontoene dine. Ha unike passord for hver konto, og vær forberedt.",
         "ru": "Вы провалили тест. НИКОГДА не сообщайте свой пароль, если кто-то его просит. Скорее всего, они пытаются получить доступ к вашим аккаунтам. Используйте уникальные пароли для каждого аккаунта и будьте начеку."
+    },
+    "start_course": {
+        "en": "Start course!",
+        "ar": "ابدأ الدورة!",
+        "de": "Kurs starten!",
+        "ja": "コースを開始！",
+        "ko": "코스 시작!",
+        "no": "Start kurset!",
+        "ru": "Начать курс!"
     }
 }

@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "./navigation-menu";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Separator } from "./separator";
-import { HomeIcon, SettingsIcon } from "@/components/ui/icons"
+import { AccountCircleIcon, HomeIcon, SettingsIcon } from "@/components/ui/icons"
+import { SettingsPopover } from "./settings-popover";
+import { AccountPopover } from "./account-popover";
 
 
 interface HeaderProps {
@@ -26,10 +27,12 @@ export default function Header({ lan }: HeaderProps) {
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <AccountPopover/>
+                        </NavigationMenuItem>
                         <NavigationMenuItem className="ml-auto mr-0">
                             <div className="flex flex-row gap-4">
-                                <ThemeToggle/>
-                                <SettingsIcon/>
+                                <SettingsPopover/>
                             </div>
                         </NavigationMenuItem>
                     </NavigationMenuList>

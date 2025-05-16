@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useState } from "react";
 
 import { ScrollArea } from "@/components/ui/scroll-area"
 import language_sup from "@/language-sup/language_sup.json"
@@ -29,7 +28,7 @@ export function LanguageSelector() {
             {language_sup.supports.map((supportedLang: string) => (
               <div key={supportedLang} className="flex items-center justify-center">
                 <p
-                  className="m-1 w-12 h-8 cursor-pointer hover:bg-gray-100 rounded-2xl text-2xl flex items-center justify-center text-center"
+                  className="m-1 w-12 h-8 cursor-pointer rounded-2xl text-2xl flex items-center justify-center text-center"
                   onClick={() => handleLanguageChange(supportedLang)}
                 >
                   {supportedLang}

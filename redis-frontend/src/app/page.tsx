@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex justify-center m-40">
         <Button
           className=""
-          onClick={() => window.location.href = "/chapter-1/page.tsx"}
+          onClick={() => window.location.href = "/chapter-1/"}
         >
           {language_sup.start_course[
         lang as keyof typeof language_sup.start_course

@@ -14,11 +14,9 @@ export function SettingsPopover() {
       <PopoverTrigger asChild>
         <Button variant="outline"><SettingsIcon/></Button>
       </PopoverTrigger>
-      <PopoverContent className="w-40 m-4">
-        <div className="ml-auto mr-0">
-            <ThemeToggle/>
-            <LanguageSelector/>
-        </div>
+      <PopoverContent className="w-auto m-4 flex flex-col gap-2 items-end">
+          <ThemeToggle/>
+          <LanguageSelector/>
       </PopoverContent>
     </Popover>
   )

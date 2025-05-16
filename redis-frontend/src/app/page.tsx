@@ -6,7 +6,7 @@ import language_sup from "@/language-sup/language_sup.json"
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [lang, setLang] = useState("")
+  const [lang, setLang] = useState("en")
 
   useEffect(() => {
     const saved = localStorage.getItem("lang");

@@ -16,16 +16,12 @@ export default function Header() {
                 <div className="w-screen">
                     <NavigationMenuList className="flex flex-col sm:flex-row">
                         <NavigationMenuItem>
-                            <Link
-                            href="http://localhost:3000"
-                            legacyBehavior passHref
-                            >
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                    <Image 
-                                        className="w-40"
-                                        src={image} alt={""}/>
-                                </NavigationMenuLink>
-                            </Link>
+                            <Image
+                                className="w-40 cursor-pointer"
+                                src={image}
+                                alt={""}
+                                onClick={() => window.location.href = "/"}
+                            />
                         </NavigationMenuItem>
 
                         

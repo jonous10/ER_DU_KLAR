@@ -1,14 +1,11 @@
 "use client"
 
 import Header from "@/components/ui/header";
-import { LanguageSelector } from "@/components/ui/language-select";
 import language_sup from "@/language-sup/language_sup.json"
-import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/language-context";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();
-
 
   return (
     <div>

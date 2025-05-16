@@ -5,7 +5,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { AccountCircleIcon } from "./icons"
-import { ThemeToggle } from "./theme-toggle"
 import LoginCard from "./login-card"
 
 export function AccountPopover() {

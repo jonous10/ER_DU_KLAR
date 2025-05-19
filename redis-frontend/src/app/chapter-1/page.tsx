@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { Separator } from "@radix-ui/react-separator";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();
@@ -36,6 +37,12 @@ export default function Home() {
         { failed && 
         <Card className="max-w-180 p-8">
           <p className="text-3xl">{language_sup.test_failed[lang as keyof typeof language_sup.test_failed]}</p>
+          <Separator/>
+          <p className="text-3xl">{language_sup.click_malicious_link[lang as keyof typeof language_sup.click_malicious_link]}</p>
+          <Separator/>
+          <p
+          onClick={() => window.location.href = "/chapter-2/"}
+          >https://youtube.com@safeweb-world.id/link-inject/secure-world</p>
         </Card>}
       </div>
     </div>

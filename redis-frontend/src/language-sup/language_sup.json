@@ -44,7 +44,14 @@
         "ko": "당신은 테스트에 실패했습니다. 누군가 비밀번호를 요구해도 절대 알려주지 마세요. 그들은 당신의 계정에 접근하려는 의도일 수 있습니다. 계정마다 고유한 비밀번호를 사용하고 항상 대비하세요.",
         "no": "Du strøk på testen – ALDRI gi fra deg passordet ditt hvis noen ber om det. De prøver sannsynligvis å få tilgang til kontoene dine. Ha unike passord for hver konto, og vær forberedt.",
         "ru": "Вы провалили тест. НИКОГДА не сообщайте свой пароль, если кто-то его просит. Скорее всего, они пытаются получить доступ к вашим аккаунтам. Используйте уникальные пароли для каждого аккаунта и будьте начеку."
+    },
+    "click_malicious_link": {
+        "en": "Instead, watch this YouTube video below to get a better understanding of what a good password looks like:",
+        "ar": "بدلاً من ذلك، شاهد فيديو YouTube أدناه للحصول على فهم أفضل لكيفية إنشاء كلمة مرور قوية:",
+        "de": "Sieh dir stattdessen das folgende YouTube-Video an, um besser zu verstehen, wie ein sicheres Passwort aussehen sollte:",
+        "ja": "代わりに、以下のYouTube動画を見て、強力なパスワードがどのようなものかを理解しましょう。",
+        "ko": "대신 아래 유튜브 영상을 시청하여 강력한 비밀번호가 어떤 것인지 더 잘 이해해보세요.",
+        "no": "Se heller på YouTube-videoen nedenfor for å få en bedre forståelse av hvordan et sterkt passord bør se ut:",
+        "ru": "Вместо этого посмотрите видео на YouTube ниже, чтобы лучше понять, каким должен быть надежный пароль:"
     }
-    
-    
 }

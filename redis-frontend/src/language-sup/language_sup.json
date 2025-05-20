@@ -63,16 +63,6 @@
       "no": "DU FEILET IGJEN! Se nøye på lenkene du klikker på. En URL som <strong>https://youtube.com@safeweb-world.id</strong> kan se ut som om den går til YouTube, men det gjør den ikke. Alt før @-symbolet er bare en bløff – den faktiske destinasjonen er safeweb-world.id, et mistenkelig og tvilsomt nettsted.",
       "ru": "ВЫ СНОВА ОШИБЛИСЬ! Внимательно смотрите на ссылки, по которым переходите. URL вроде <strong>https://youtube.com@safeweb-world.id</strong> может показаться, что ведёт на YouTube, но это не так. Всё, что идёт перед символом @, — это уловка. Реальный адрес — это safeweb-world.id, подозрительный и сомнительный сайт."
     },
-
-    "trust_worthy_example": {
-      "en": "So, what does a trustworthy link actually look like?<br><br><br><br>• It uses <strong>HTTPS</strong>, which means the connection is secure.<br><br>• The domain is <strong>clear and familiar</strong>, like google.com or openai.com—nothing weird or unfamiliar.<br><br>• There are <strong>no strange characters</strong>, like @, long random strings, or subtle misspellings (e.g., go0gle.com instead of google.com).<br><br>• It <strong>matches the site you expect</strong>—you can hover over the link to preview where it really goes.<br><br><br><br>If a link feels off or looks too complicated, it’s probably not safe.",
-      "ar": "فما الذي يجعل الرابط موثوقًا به بالفعل؟<br><br><br><br>• يستخدم <strong>HTTPS</strong>، مما يعني أن الاتصال آمن.<br><br>• النطاق <strong>واضح ومألوف</strong>، مثل google.com أو openai.com — لا شيء غريب أو غير معروف.<br><br>• لا يحتوي على <strong>أحرف غريبة</strong>، مثل @ أو سلاسل عشوائية طويلة أو أخطاء إملائية خفية (مثل go0gle.com بدلاً من google.com).<br><br>• <strong>يتطابق مع الموقع الذي تتوقعه</strong> — يمكنك تمرير المؤشر فوق الرابط لرؤية المكان الفعلي الذي سيأخذك إليه.<br><br><br><br>إذا بدا الرابط مريبًا أو معقدًا بشكل مفرط، فغالبًا ما يكون غير آمن.",
-      "de": "Wie sieht also ein vertrauenswürdiger Link eigentlich aus?<br><br><br><br>• Er verwendet <strong>HTTPS</strong>, was bedeutet, dass die Verbindung sicher ist.<br><br>• Die Domain ist <strong>klar und bekannt</strong>, wie google.com oder openai.com – nichts Ungewöhnliches oder Unbekanntes.<br><br>• Es gibt <strong>keine seltsamen Zeichen</strong>, wie @, lange zufällige Zeichenfolgen oder subtile Tippfehler (z. B. go0gle.com statt google.com).<br><br>• Er <strong>entspricht der erwarteten Seite</strong> – du kannst mit der Maus über den Link fahren, um das tatsächliche Ziel anzuzeigen.<br><br><br><br>Wenn ein Link merkwürdig aussieht oder zu kompliziert ist, ist er wahrscheinlich nicht sicher.",
-      "ja": "では、信頼できるリンクとはどのようなものでしょうか？<br><br><br><br>• <strong>HTTPS</strong> を使用しており、安全な接続が確保されています。<br><br>• google.com や openai.com のように、<strong>明確で見覚えのあるドメイン</strong>です。<br><br>• @ 記号やランダムな文字列、微妙なスペルミス（例：go0gle.com）など、<strong>不自然な文字は含まれていません</strong>。<br><br>• <strong>期待するサイトと一致している</strong>こと — リンクにカーソルを合わせると、実際の遷移先が表示されます。<br><br><br><br>リンクに違和感がある場合や、複雑すぎると感じた場合は、安全ではない可能性が高いです。",
-      "ko": "그렇다면 신뢰할 수 있는 링크는 어떤 모습일까요?<br><br><br><br>• <strong>HTTPS</strong>를 사용하여 연결이 안전합니다.<br><br>• google.com이나 openai.com처럼 <strong>명확하고 익숙한 도메인</strong>입니다 — 이상하거나 낯선 것이 없습니다.<br><br>• @, 긴 무작위 문자열, go0gle.com 같은 <strong>철자 오류</strong>와 같은 <strong>이상한 문자</strong>가 없습니다.<br><br>• <strong>예상한 사이트와 일치</strong>합니다 — 링크 위에 마우스를 올리면 실제 목적지를 미리 볼 수 있습니다.<br><br><br><br>링크가 복잡하거나 수상해 보인다면, 아마도 안전하지 않을 가능성이 높습니다.",
-      "no": "Så, hvordan ser en pålitelig lenke egentlig ut?<br><br><br><br>• Den bruker <strong>HTTPS</strong>, som betyr at forbindelsen er sikker.<br><br>• Domenet er <strong>klart og gjenkjennelig</strong>, som google.com eller openai.com — ingenting rart eller ukjent.<br><br>• Det er <strong>ingen rare tegn</strong>, som @, lange tilfeldige strenger eller subtile stavefeil (f.eks. go0gle.com i stedet for google.com).<br><br>• Den <strong>matcher det nettstedet du forventer</strong> — du kan holde musepekeren over lenken for å se hvor den faktisk fører.<br><br><br><br>Hvis en lenke virker mistenkelig eller altfor komplisert, er den trolig ikke trygg.",
-      "ru": "Итак, как выглядит надёжная ссылка?<br><br><br><br>• Она использует <strong>HTTPS</strong>, что означает безопасное соединение.<br><br>• Домен <strong>понятный и знакомый</strong>, например google.com или openai.com — ничего странного или незнакомого.<br><br>• В ссылке <strong>нет странных символов</strong>, таких как @, длинных случайных строк или мелких опечаток (например, go0gle.com вместо google.com).<br><br>• Ссылка <strong>соответствует ожидаемому сайту</strong> — можно навести курсор, чтобы увидеть настоящий адрес перехода.<br><br><br><br>Если ссылка выглядит подозрительно или слишком сложно, скорее всего, она небезопасна."
-    },
     "next": {
     "en": "Next page!",
     "ar": "الصفحة التالية!",
@@ -90,5 +80,47 @@
     "ko": "걱정 마세요, 이번에는 진짜 안전한 링크예요. ;)",
     "no": "Slapp av, denne lenken er faktisk trygg denne gangen. ;)",
     "ru": "Не переживай, на этот раз ссылка действительно безопасна. ;)"
+    },
+    "trust_worthy_example": {
+      "en": "So, what does a trustworthy link actually look like?<br><br><br><br>• It uses <strong>HTTPS</strong>, which means the connection is secure.<br><br>• The domain is <strong>clear and familiar</strong>, like google.com or openai.com—nothing weird or unfamiliar.<br><br>• There are <strong>no strange characters</strong>, like @, long random strings, or subtle misspellings (e.g., go0gle.com instead of google.com).<br><br>• It <strong>matches the site you expect</strong>—you can hover over the link to preview where it really goes.<br><br><br><br>If a link feels off or looks too complicated, it’s probably not safe.",
+      "ar": "فما الذي يجعل الرابط موثوقًا به بالفعل؟<br><br><br><br>• يستخدم <strong>HTTPS</strong>، مما يعني أن الاتصال آمن.<br><br>• النطاق <strong>واضح ومألوف</strong>، مثل google.com أو openai.com — لا شيء غريب أو غير معروف.<br><br>• لا يحتوي على <strong>أحرف غريبة</strong>، مثل @ أو سلاسل عشوائية طويلة أو أخطاء إملائية خفية (مثل go0gle.com بدلاً من google.com).<br><br>• <strong>يتطابق مع الموقع الذي تتوقعه</strong> — يمكنك تمرير المؤشر فوق الرابط لرؤية المكان الفعلي الذي سيأخذك إليه.<br><br><br><br>إذا بدا الرابط مريبًا أو معقدًا بشكل مفرط، فغالبًا ما يكون غير آمن.",
+      "de": "Wie sieht also ein vertrauenswürdiger Link eigentlich aus?<br><br><br><br>• Er verwendet <strong>HTTPS</strong>, was bedeutet, dass die Verbindung sicher ist.<br><br>• Die Domain ist <strong>klar und bekannt</strong>, wie google.com oder openai.com – nichts Ungewöhnliches oder Unbekanntes.<br><br>• Es gibt <strong>keine seltsamen Zeichen</strong>, wie @, lange zufällige Zeichenfolgen oder subtile Tippfehler (z. B. go0gle.com statt google.com).<br><br>• Er <strong>entspricht der erwarteten Seite</strong> – du kannst mit der Maus über den Link fahren, um das tatsächliche Ziel anzuzeigen.<br><br><br><br>Wenn ein Link merkwürdig aussieht oder zu kompliziert ist, ist er wahrscheinlich nicht sicher.",
+      "ja": "では、信頼できるリンクとはどのようなものでしょうか？<br><br><br><br>• <strong>HTTPS</strong> を使用しており、安全な接続が確保されています。<br><br>• google.com や openai.com のように、<strong>明確で見覚えのあるドメイン</strong>です。<br><br>• @ 記号やランダムな文字列、微妙なスペルミス（例：go0gle.com）など、<strong>不自然な文字は含まれていません</strong>。<br><br>• <strong>期待するサイトと一致している</strong>こと — リンクにカーソルを合わせると、実際の遷移先が表示されます。<br><br><br><br>リンクに違和感がある場合や、複雑すぎると感じた場合は、安全ではない可能性が高いです。",
+      "ko": "그렇다면 신뢰할 수 있는 링크는 어떤 모습일까요?<br><br><br><br>• <strong>HTTPS</strong>를 사용하여 연결이 안전합니다.<br><br>• google.com이나 openai.com처럼 <strong>명확하고 익숙한 도메인</strong>입니다 — 이상하거나 낯선 것이 없습니다.<br><br>• @, 긴 무작위 문자열, go0gle.com 같은 <strong>철자 오류</strong>와 같은 <strong>이상한 문자</strong>가 없습니다.<br><br>• <strong>예상한 사이트와 일치</strong>합니다 — 링크 위에 마우스를 올리면 실제 목적지를 미리 볼 수 있습니다.<br><br><br><br>링크가 복잡하거나 수상해 보인다면, 아마도 안전하지 않을 가능성이 높습니다.",
+      "no": "Så, hvordan ser en pålitelig lenke egentlig ut?<br><br><br><br>• Den bruker <strong>HTTPS</strong>, som betyr at forbindelsen er sikker.<br><br>• Domenet er <strong>klart og gjenkjennelig</strong>, som google.com eller openai.com — ingenting rart eller ukjent.<br><br>• Det er <strong>ingen rare tegn</strong>, som @, lange tilfeldige strenger eller subtile stavefeil (f.eks. go0gle.com i stedet for google.com).<br><br>• Den <strong>matcher det nettstedet du forventer</strong> — du kan holde musepekeren over lenken for å se hvor den faktisk fører.<br><br><br><br>Hvis en lenke virker mistenkelig eller altfor komplisert, er den trolig ikke trygg.",
+      "ru": "Итак, как выглядит надёжная ссылка?<br><br><br><br>• Она использует <strong>HTTPS</strong>, что означает безопасное соединение.<br><br>• Домен <strong>понятный и знакомый</strong>, например google.com или openai.com — ничего странного или незнакомого.<br><br>• В ссылке <strong>нет странных символов</strong>, таких как @, длинных случайных строк или мелких опечаток (например, go0gle.com вместо google.com).<br><br>• Ссылка <strong>соответствует ожидаемому сайту</strong> — можно навести курсор, чтобы увидеть настоящий адрес перехода.<br><br><br><br>Если ссылка выглядит подозрительно или слишком сложно, скорее всего, она небезопасна."
+    },
+    "are_you_ready": {
+    "en": "Now, are you finally ready to take on the last test?",
+    "ar": "هل أنت مستعد الآن لخوض الاختبار الأخير؟",
+    "de": "Bist du jetzt endlich bereit für den letzten Test?",
+    "ja": "さあ、最後のテストに挑む準備はできましたか？",
+    "ko": "이제 마지막 테스트를 치를 준비가 되셨나요?",
+    "no": "Er du endelig klar for den siste testen?",
+    "ru": "Ну что, вы наконец готовы пройти последнее испытание?"
+    },
+    "i_am_ready": {
+        "en": "I am Ready!",
+        "ar": "أنا مستعد!",
+        "de": "Ich bin bereit!",
+        "ja": "準備できました！",
+        "ko": "준비됐어요!",
+        "no": "Jeg er klar!",
+        "ru": "Я готов!"
+    },
+    "last_test": {
+        "en": "From all you've learned till now, look at these two emails and deduct which one is the most SUSPICIOUS:",
+        "ar": "من كل ما تعلمته حتى الآن، انظر إلى هذين البريدين الإلكترونيين وحدد أيهما الأكثر شبهة:",
+        "de": "Basierend auf allem, was du bisher gelernt hast – schau dir diese zwei E-Mails an und entscheide, welche am verdächtigsten ist:",
+        "ja": "これまでに学んだことを元に、次の2つのメールを見て、どちらがより怪しいかを判断してください：",
+        "ko": "지금까지 배운 내용을 바탕으로, 두 이메일을 보고 어떤 것이 가장 의심스러운지 판단해보세요:",
+        "no": "Basert på alt du har lært til nå – se på disse to e-postene og avgjør hvilken som er mest MISTENKELIG:",
+        "ru": "На основе всего, что вы узнали до этого — посмотрите на эти два письма и определите, какое из них наиболее ПОДОЗРИТЕЛЬНО:"
+    },
+    "sus_email": {
+      "en": "<h3>Security Alert!</h3><p>Dear user,</p><p>We noticed unusual activity on your account. Please <a href='https://youtube.com@secure-notice-login.net'>click here</a> to verify your information immediately.</p><p style='color: red; font-weight: bold;'>Failure to act within 24 hours will result in account suspension.</p><p>Stay safe,<br><strong>YouTube Support</strong></p>"
+    },
+    "not_sus_email": {
+      "en": "<h3>Account Update Confirmation</h3><p>Hi Alex,</p><p>Your password was changed successfully. If this was you, no action is needed.</p><p>If you didn’t make this change, please <a href='https://myaccount.google.com/security'>secure your account</a> right away.</p><p>Thanks,<br><strong>The YouTube Team</strong></p>"
     }
 }

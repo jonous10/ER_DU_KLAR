@@ -6,7 +6,6 @@ import { useLanguage } from "@/contexts/language-context";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@radix-ui/react-separator";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();

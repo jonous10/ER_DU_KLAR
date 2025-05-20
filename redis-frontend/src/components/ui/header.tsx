@@ -1,11 +1,11 @@
 "use client"
 
-import Link from "next/link";
-import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "./navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList, } from "./navigation-menu";
 import { Separator } from "./separator";
 import { SettingsPopover } from "./settings-popover";
 import { AccountPopover } from "./account-popover";
-import image from "@/images/politiet.png"
+import politiet_light from "@/images/politiet_light.png"
+import politiet_dark from "@/images/politiet_dark.png"
 import Image from "next/image";
 
 
@@ -17,8 +17,14 @@ export default function Header() {
                     <NavigationMenuList className="flex flex-col sm:flex-row">
                         <NavigationMenuItem>
                             <Image
-                                className="w-40 cursor-pointer"
-                                src={image}
+                                className="w-40 cursor-pointer dark:hidden"
+                                src={politiet_light}
+                                alt={""}
+                                onClick={() => window.location.href = "/"}
+                            />
+                            <Image
+                                className="w-40 cursor-pointer hidden dark:block"
+                                src={politiet_dark}
                                 alt={""}
                                 onClick={() => window.location.href = "/"}
                             />

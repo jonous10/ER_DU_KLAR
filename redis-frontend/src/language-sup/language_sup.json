@@ -118,7 +118,14 @@
         "ru": "На основе всего, что вы узнали до этого — посмотрите на эти два письма и определите, какое из них наиболее ПОДОЗРИТЕЛЬНО:"
     },
     "sus_email": {
-      "en": "<h3>Security Alert!</h3><p>Dear user,</p><p>We noticed unusual activity on your account. Please <a href='https://youtube.com@secure-notice-login.net'>click here</a> to verify your information immediately.</p><p style='color: red; font-weight: bold;'>Failure to act within 24 hours will result in account suspension.</p><p>Stay safe,<br><strong>YouTube Support</strong></p>"
+     "en": [
+        "<p><strong>From:</strong> Google Account Team &lt;security@google-support-alert.com&gt;</p>",
+        "<p><strong>Subject:</strong> ⚠️ Action Required: Unusual sign-in attempt detected</p>",
+        "<p>Dear Google User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p>",
+        "<p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='https://accounts.google.com.secure-login-alert.net' style='color: red;'>Verify your account</a></p>",
+        "<p>If no action is taken within 12 hours, your account may be permanently suspended.</p>",
+        "<p>Thank you,<br><strong>Google Security Team</strong></p>"
+        ]
     },
     "not_sus_email": {
       "en": "<h3>Account Update Confirmation</h3><p>Hi Alex,</p><p>Your password was changed successfully. If this was you, no action is needed.</p><p>If you didn’t make this change, please <a href='https://myaccount.google.com/security'>secure your account</a> right away.</p><p>Thanks,<br><strong>The YouTube Team</strong></p>"

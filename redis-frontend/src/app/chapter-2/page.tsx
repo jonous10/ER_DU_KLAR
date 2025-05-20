@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/language-context";
 import { Card } from "@/components/ui/card";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();
@@ -24,6 +25,7 @@ export default function Home() {
                 __html: language_sup.trust_worthy_example[lang as keyof typeof language_sup.trust_worthy_example],
               }}
             />
+            <Separator/>
             <p className="text-3xl">{language_sup.are_you_ready[lang as keyof typeof language_sup.are_you_ready]}</p>
             <Button 
             className="m-auto"

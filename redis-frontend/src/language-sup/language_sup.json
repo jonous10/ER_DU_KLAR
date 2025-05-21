@@ -155,7 +155,48 @@
         "en": "You FAILED, learn why:"
     },
     "fail_explained": {
-        "en": "<p><strong>Sender Address (Left):</strong> no-reply@account-security.googlemail.co – fake or misleading domain.</p><p><strong>Sender Address (Right):</strong> no-reply@accounts.google.com – appears to be a legitimate Google domain.</p><p><strong>Subject Line (Left):</strong> “Immediate Action Required” – uses urgent, alarming language.</p><p><strong>Subject Line (Right):</strong> “Security alert: New sign-in…” – more neutral and informative.</p><p><strong>Tone (Left):</strong> Threatening and urgent – uses phrases like “Failure to act within 6 hours…” to create fear.</p><p><strong>Tone (Right):</strong> Calm and procedural – informs the user without creating panic.</p><p><strong>Link Text (Left):</strong> “Click here to secure your account” – overly dramatic and highlighted in red.</p><p><strong>Link Text (Right):</strong> “Verify your account” – neutral and standard phrasing.</p><p><strong>Formatting (Left):</strong> Uses bold, red text, and emphasis to increase urgency.</p><p><strong>Formatting (Right):</strong> Professional and consistent without excessive styling.</p>"
+      "rows": [
+        {
+          "A": {
+            "en": "Sender Address: no-reply@account-security.googlemail.co – fake or misleading domain."
+          },
+          "B": {
+            "en": "Sender Address: no-reply@accounts.google.com – appears to be a legitimate Google domain."
+          }
+        },
+        {
+          "A": {
+            "en": "Subject Line: “Immediate Action Required” – uses urgent, alarming language."
+          },
+          "B": {
+            "en": "Subject Line: “Security alert: New sign-in…” – more neutral and informative."
+          }
+        },
+        {
+          "A": {
+            "en": "Tone: Threatening and urgent – uses phrases like “Failure to act within 6 hours…” to create fear."
+          },
+          "B": {
+            "en": "Tone: Calm and procedural – informs the user without creating panic."
+          }
+        },
+        {
+          "A": {
+            "en": "Link Text: “Click here to secure your account” – overly dramatic and highlighted in red."
+          },
+          "B": {
+            "en": "Link Text: “Verify your account” – neutral and standard phrasing."
+          }
+        },
+        {
+          "A": {
+            "en": "Formatting: Uses bold, red text, and emphasis to increase urgency."
+          },
+          "B": {
+            "en": "Formatting: Professional and consistent without excessive styling."
+          }
+        }
+      ]
     },
     "retry": {
         "en": "Retry"

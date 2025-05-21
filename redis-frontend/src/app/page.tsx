@@ -11,15 +11,15 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <h1 className="text-3xl sm:text-7xl">
+      <div className="m-auto w-min mt-40">
+        <h1 className="text-3xl sm:text-8xl m-auto text-center min-w-screen">
           {language_sup.ARE_YOU_READY[lang as keyof typeof language_sup.start_course]}
         </h1>
       </div>
       
-      <div className="flex justify-center m-40">
+      <div className="flex justify-center m-40 ">
         <Button
-          className=""
+          className="text-2xl p-8"
           onClick={() => window.location.href = "/chapter-1/"}
         >
           {language_sup.start_course[

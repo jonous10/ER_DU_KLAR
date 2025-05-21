@@ -13,42 +13,14 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <div className="flex flex-col justify-center items-center m-10 mt-40">
+      <div className="flex flex-col justify-center items-center m-10 sm:mt-40 text-1xl sm:text-3xl">
         
         <Card className="max-w-240 p-8">
-            <p className="text-3xl">{language_sup.last_test[lang as keyof typeof language_sup.last_test]}</p>
+            <p>{language_sup.last_test[lang as keyof typeof language_sup.last_test]}</p>
         </Card>
 
         <div className="w-full flex flex-col sm:flex-row gap-4 m-10">
-            <Card className="m-auto max-w-200 p-10 text-2xl">
-              <Button 
-              className="max-w-80 m-auto"
-              onClick={() => window.location.href = "/success/"}
-              >{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
-                  <p>
-                  <div
-                    dangerouslySetInnerHTML={{
-                    __html: language_sup.sus_email.from[lang as keyof typeof language_sup.sus_email.from],
-                    }}
-                  />
-                  </p>
-                  <p>
-                  <div
-                    dangerouslySetInnerHTML={{
-                    __html: language_sup.sus_email.subject[lang as keyof typeof language_sup.sus_email.subject],
-                    }}
-                  />
-                  </p>
-                  <p>
-                  <div
-                    dangerouslySetInnerHTML={{
-                    __html: language_sup.sus_email.body[lang as keyof typeof language_sup.sus_email.body],
-                    }}
-                  />
-                  </p>
-            </Card>
-
-            <Card className="m-auto max-w-200 p-10 text-2xl">
+            <Card className="m-auto max-w-200 p-10">
               <Button 
               className="max-w-80 m-auto"
               onClick={() => window.location.href = "/fail/"}
@@ -74,6 +46,33 @@ export default function Home() {
                   }}
                 />
               </p>
+            </Card>
+            <Card className="m-auto max-w-200 p-10">
+              <Button 
+              className="max-w-80 m-auto"
+              onClick={() => window.location.href = "/success/"}
+              >{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.from[lang as keyof typeof language_sup.sus_email.from],
+                    }}
+                  />
+                  </p>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.subject[lang as keyof typeof language_sup.sus_email.subject],
+                    }}
+                  />
+                  </p>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.body[lang as keyof typeof language_sup.sus_email.body],
+                    }}
+                  />
+                  </p>
             </Card>
         </div>
       </div>

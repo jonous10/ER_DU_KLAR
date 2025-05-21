@@ -15,18 +15,17 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <div className="flex flex-col justify-center items-center m-10 mt-40">
+      <div className="flex flex-col justify-center items-center m-10 sm:mt-40">
         { next ? 
         <div>
-          <Card className="max-w-240 p-8">
+          <Card className="max-w-240 p-8 text-1xl sm:text-3xl">
             <div
-              className="text-3xl"
               dangerouslySetInnerHTML={{
                 __html: language_sup.trust_worthy_example[lang as keyof typeof language_sup.trust_worthy_example],
               }}
             />
             <Separator/>
-            <p className="text-3xl">{language_sup.are_you_ready[lang as keyof typeof language_sup.are_you_ready]}</p>
+            <p>{language_sup.are_you_ready[lang as keyof typeof language_sup.are_you_ready]}</p>
             <Button 
             className="m-auto"
             onClick={() => window.location.href = "/chapter-3/"}

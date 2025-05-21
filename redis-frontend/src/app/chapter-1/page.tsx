@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <div>
       <Header/>
-      <div className="flex flex-col justify-center items-center m-10 mt-40">
+      <div className="flex flex-col justify-center items-center m-10 sm:mt-40">
         
         { !failed && 
         <>
-        <Card className="max-w-180 p-8">
+        <Card className="max-w-11/12 sm:max-w-180 p-8">
           <p className="text-3xl">{language_sup.psswrd_tempter[lang as keyof typeof language_sup.psswrd_tempter]}</p>
         </Card>
         <Input 
@@ -35,13 +35,13 @@ export default function Home() {
         ></Input>
         </>}
         { failed && 
-        <Card className="max-w-180 p-8">
-          <p className="text-3xl">{language_sup.test_failed[lang as keyof typeof language_sup.test_failed]}</p>
+        <Card className="max-w-11/12 sm:max-w-180 p-8 text-1xl sm:text-4xl">
+          <p>{language_sup.test_failed[lang as keyof typeof language_sup.test_failed]}</p>
           <Separator/>
-          <p className="text-3xl">{language_sup.click_malicious_link[lang as keyof typeof language_sup.click_malicious_link]}</p>
+          <p>{language_sup.click_malicious_link[lang as keyof typeof language_sup.click_malicious_link]}</p>
           <Separator/>
           <p
-          className="cursor-pointer text-2xl text-blue-400 underline"
+          className="cursor-pointer text-blue-400 underline"
           onClick={() => window.location.href = "/chapter-2/"}
           >https://youtube.com@safeweb-world.id/link-inject/secure-world</p>
         </Card>}

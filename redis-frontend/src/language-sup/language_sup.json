@@ -117,17 +117,30 @@
         "no": "Basert på alt du har lært til nå – se på disse to e-postene og avgjør hvilken som er mest MISTENKELIG:",
         "ru": "На основе всего, что вы узнали до этого — посмотрите на эти два письма и определите, какое из них наиболее ПОДОЗРИТЕЛЬНО:"
     },
-    "sus_email": {
-     "en": [
-        "<p><strong>From:</strong> Google Account Team &lt;security@google-support-alert.com&gt;</p>",
-        "<p><strong>Subject:</strong> ⚠️ Action Required: Unusual sign-in attempt detected</p>",
-        "<p>Dear Google User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p>",
-        "<p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='https://accounts.google.com.secure-login-alert.net' style='color: red;'>Verify your account</a></p>",
-        "<p>If no action is taken within 12 hours, your account may be permanently suspended.</p>",
-        "<p>Thank you,<br><strong>Google Security Team</strong></p>"
-        ]
-    },
     "not_sus_email": {
-      "en": "<h3>Account Update Confirmation</h3><p>Hi Alex,</p><p>Your password was changed successfully. If this was you, no action is needed.</p><p>If you didn’t make this change, please <a href='https://myaccount.google.com/security'>secure your account</a> right away.</p><p>Thanks,<br><strong>The YouTube Team</strong></p>"
+        "from": {
+            "en": "<p><strong>From:</strong> Google Account Team &lt;no-reply@accounts.google.com&gt;</p>"
+        },
+        "subject": {
+            "en": "<p><strong>Subject:</strong> Security alert: New sign-in on your Google Account</p>"
+        },
+        "body": {
+            "en": "<p>Dear User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p><p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='https://accounts.google.com.secure-login-alert.net' style='color: red;'>Verify your account</a></p><p>If no action is taken within 12 hours, your account may be permanently suspended.</p><p>Thank you,<br><strong>Google Security Team</strong></p>"
+        }
+    },
+    "sus_email": {
+        "from": {
+            "en": "<p><strong>From:</strong> Google Security &lt;no-reply@account-security.googlemail.co&gt;</p>"
+        },
+        "subject": {
+            "en": "<p><strong>Subject:</strong> Immediate Action Required: Unauthorized Login Attempt</p>"
+        },
+        "body": {
+            "en": "<p>Dear User,</p><p>We have noticed <strong>unauthorized activity</strong> on your Google account. For your safety, your account access is currently limited.</p><p>To <u>restore access immediately</u>, please verify your identity at the following link:</p><p><a href='https://google.verify-alerts-login.com' style='color: red;'>Click here to secure your account</a></p><p><strong>Failure to act within 6 hours may result in permanent account deletion.</strong></p><p>Best regards,<br><strong>Google Account Support</strong></p>"
+        }
+    },
+    "sus": {
+        "en": "This one is suspicious..."
     }
+
 }

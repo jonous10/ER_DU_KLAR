@@ -4,7 +4,8 @@ import Header from "@/components/ui/header";
 import language_sup from "@/language-sup/language_sup.json"
 import { useLanguage } from "@/contexts/language-context";
 import { Card } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const { lang, setLang } = useLanguage();
@@ -18,18 +19,55 @@ export default function Home() {
             <p className="text-3xl">{language_sup.last_test[lang as keyof typeof language_sup.last_test]}</p>
         </Card>
 
-        <div className="w-full flex flex-row gap-4 m-10">
-            <Card className="m-auto w-180">
-                {language_sup.sus_email[lang as keyof typeof language_sup.sus_email].map((section, index) => (
-                    <div key={index}>
-                        <div dangerouslySetInnerHTML={{ __html: section }} />
-                        {index < language_sup.sus_email[lang as keyof typeof language_sup.sus_email].length - 1 && <Separator />}
-                    </div>
-                ))}
+        <div className="w-full flex flex-col sm:flex-row gap-4 m-10">
+            <Card className="m-auto max-w-200 p-10 text-2xl">
+              <Button className="max-w-80 m-auto">{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.from[lang as keyof typeof language_sup.sus_email.from],
+                    }}
+                  />
+                  </p>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.subject[lang as keyof typeof language_sup.sus_email.subject],
+                    }}
+                  />
+                  </p>
+                  <p>
+                  <div
+                    dangerouslySetInnerHTML={{
+                    __html: language_sup.sus_email.body[lang as keyof typeof language_sup.sus_email.body],
+                    }}
+                  />
+                  </p>
             </Card>
 
-            <Card className="m-auto w-180">
-
+            <Card className="m-auto max-w-200 p-10 text-2xl">
+              <Button className="max-w-80 m-auto">{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: language_sup.not_sus_email.from[lang as keyof typeof language_sup.not_sus_email.from],
+                  }}
+                />
+              </p>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: language_sup.not_sus_email.subject[lang as keyof typeof language_sup.not_sus_email.subject],
+                  }}
+                />
+              </p>
+              <p>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: language_sup.not_sus_email.body[lang as keyof typeof language_sup.not_sus_email.body],
+                  }}
+                />
+              </p>
             </Card>
         </div>
       </div>

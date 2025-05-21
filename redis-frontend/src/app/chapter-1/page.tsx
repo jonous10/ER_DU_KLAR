@@ -41,6 +41,7 @@ export default function Home() {
           <p className="text-3xl">{language_sup.click_malicious_link[lang as keyof typeof language_sup.click_malicious_link]}</p>
           <Separator/>
           <p
+          className="cursor-pointer text-2xl text-blue-400 underline"
           onClick={() => window.location.href = "/chapter-2/"}
           >https://youtube.com@safeweb-world.id/link-inject/secure-world</p>
         </Card>}

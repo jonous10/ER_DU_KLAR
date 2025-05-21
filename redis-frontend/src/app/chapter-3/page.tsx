@@ -21,7 +21,10 @@ export default function Home() {
 
         <div className="w-full flex flex-col sm:flex-row gap-4 m-10">
             <Card className="m-auto max-w-200 p-10 text-2xl">
-              <Button className="max-w-80 m-auto">{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
+              <Button 
+              className="max-w-80 m-auto"
+              onClick={() => window.location.href = "/success/"}
+              >{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
                   <p>
                   <div
                     dangerouslySetInnerHTML={{
@@ -46,7 +49,10 @@ export default function Home() {
             </Card>
 
             <Card className="m-auto max-w-200 p-10 text-2xl">
-              <Button className="max-w-80 m-auto">{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
+              <Button 
+              className="max-w-80 m-auto"
+              onClick={() => window.location.href = "/fail/"}
+              >{language_sup.sus[lang as keyof typeof language_sup.sus]}</Button>
               <p>
                 <div
                   dangerouslySetInnerHTML={{

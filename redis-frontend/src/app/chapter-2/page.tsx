@@ -49,7 +49,7 @@ export default function Home() {
             title={language_sup.dont_worry[lang as keyof typeof language_sup.dont_worry]}
             className="mt-4 text-blue-600 underline hover:cursor-pointer cursor-pointer px-4 py-2 rounded m-auto"
             onClick={() => {
-              alert("Don't worry, this is actually safe this time")
+              alert(language_sup.dont_worry[lang as keyof typeof language_sup.dont_worry])
               setNext(true)
             }}
           >

@@ -125,7 +125,7 @@
             "en": "<p><strong>Subject:</strong> Security alert: New sign-in on your Google Account</p>"
         },
         "body": {
-            "en": "<p>Dear User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p><p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='https://accounts.google.com.secure-login-alert.net' style='color: red;'>Verify your account</a></p><p>If no action is taken within 12 hours, your account may be permanently suspended.</p><p>Thank you,<br><strong>Google Security Team</strong></p>"
+            "en": "<p>Dear User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p><p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='/success' style='color: red;'>Verify your account</a></p><p>If no action is taken within 12 hours, your account may be permanently suspended.</p><p>Thank you,<br><strong>Google Security Team</strong></p>"
         }
     },
     "sus_email": {
@@ -136,11 +136,28 @@
             "en": "<p><strong>Subject:</strong> Immediate Action Required: Unauthorized Login Attempt</p>"
         },
         "body": {
-            "en": "<p>Dear User,</p><p>We have noticed <strong>unauthorized activity</strong> on your Google account. For your safety, your account access is currently limited.</p><p>To <u>restore access immediately</u>, please verify your identity at the following link:</p><p><a href='https://google.verify-alerts-login.com' style='color: red;'>Click here to secure your account</a></p><p><strong>Failure to act within 6 hours may result in permanent account deletion.</strong></p><p>Best regards,<br><strong>Google Account Support</strong></p>"
+            "en": "<p>Dear User,</p><p>We have noticed <strong>unauthorized activity</strong> on your Google account. For your safety, your account access is currently limited.</p><p>To <u>restore access immediately</u>, please verify your identity at the following link:</p><p><a href='/fail' style='color: red;'>Click here to secure your account</a></p><p><strong>Failure to act within 6 hours may result in permanent account deletion.</strong></p><p>Best regards,<br><strong>Google Account Support</strong></p>"
         }
     },
     "sus": {
         "en": "This one is suspicious..."
+    },
+    "correct": {
+        "en": "Your insticts were CORRECT!"
+    },
+    "diploma": {
+        "en": "Congratulations! For successfully completing the course and demonstrating your new knowledge about cybersecurity and online safety, you are awarded this diploma. Stay vigilant and keep your digital world secure!"
+    },
+    "go_home": {
+        "en": "Go Home"
+    },
+    "failed": {
+        "en": "You FAILED, learn why:"
+    },
+    "fail_explained": {
+        "en": "<p><strong>Sender Address (Left):</strong> no-reply@account-security.googlemail.co – fake or misleading domain.</p><p><strong>Sender Address (Right):</strong> no-reply@accounts.google.com – appears to be a legitimate Google domain.</p><p><strong>Subject Line (Left):</strong> “Immediate Action Required” – uses urgent, alarming language.</p><p><strong>Subject Line (Right):</strong> “Security alert: New sign-in…” – more neutral and informative.</p><p><strong>Tone (Left):</strong> Threatening and urgent – uses phrases like “Failure to act within 6 hours…” to create fear.</p><p><strong>Tone (Right):</strong> Calm and procedural – informs the user without creating panic.</p><p><strong>Link Text (Left):</strong> “Click here to secure your account” – overly dramatic and highlighted in red.</p><p><strong>Link Text (Right):</strong> “Verify your account” – neutral and standard phrasing.</p><p><strong>Formatting (Left):</strong> Uses bold, red text, and emphasis to increase urgency.</p><p><strong>Formatting (Right):</strong> Professional and consistent without excessive styling.</p>"
+    },
+    "retry": {
+        "en": "Retry"
     }
-
 }

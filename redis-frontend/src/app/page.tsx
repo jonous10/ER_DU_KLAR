@@ -12,7 +12,10 @@ export default function Home() {
     <div>
       <Header/>
       <div className="m-auto w-min mt-40">
-        <h1 className="text-3xl sm:text-8xl m-auto text-center min-w-screen">
+        <h1
+          className="text-5xl sm:text-9xl m-auto text-center min-w-screen"
+          style={{ fontFamily: '"Jersey 10", sans-serif' }}
+        >
           {language_sup.ARE_YOU_READY[lang as keyof typeof language_sup.start_course]}
         </h1>
       </div>

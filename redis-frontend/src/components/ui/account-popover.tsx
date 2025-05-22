@@ -21,14 +21,14 @@ export function AccountPopover() {
     <PopoverContent className="flex justify-center items-center p-12 m-3">
       <div className="flex flex-col items-center">
         <input
-            className="w-full mb-4 p-2 bg-[#FDDA25] rounded"
+            className="w-full mb-4 p-2 rounded"
             type="text"
             placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
         />
         <input
-            className="w-full mb-4 p-2 bg-[#FDDA25] rounded"
+            className="w-full mb-4 p-2 rounded"
             type="password"
             placeholder="Password"
             value={password}

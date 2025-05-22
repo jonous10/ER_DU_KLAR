@@ -23,7 +23,7 @@ export function LanguageSelector() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <ScrollArea className="h-72 w-22 rounded-md border bg-white">
+        <ScrollArea className="h-72 w-22 rounded-md border bg-white dark:bg-black">
           <div className="p-4">
             {language_sup.supports.map((supportedLang: string) => (
               <div key={supportedLang} className="flex items-center justify-center">

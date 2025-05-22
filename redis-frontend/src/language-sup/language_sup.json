@@ -118,87 +118,222 @@
         "ru": "На основе всего, что вы узнали до этого — посмотрите на эти два письма и определите, какое из них наиболее ПОДОЗРИТЕЛЬНО:"
     },
     "not_sus_email": {
-        "from": {
-            "en": "<p><strong>From:</strong> Google Account Team &lt;no-reply@accounts.google.com&gt;</p>"
-        },
-        "subject": {
-            "en": "<p><strong>Subject:</strong> Security alert: New sign-in on your Google Account</p>"
-        },
-        "body": {
-            "en": "<p>Dear User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p><p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='/success' style='color: red;'>Verify your account</a></p><p>If no action is taken within 12 hours, your account may be permanently suspended.</p><p>Thank you,<br><strong>Google Security Team</strong></p>"
-        }
+      "from": {
+        "en": "<p><strong>From:</strong> Google Account Team &lt;no-reply@accounts.google.com&gt;</p>",
+        "ar": "<p><strong>من:</strong> فريق حساب Google &lt;no-reply@accounts.google.com&gt;</p>",
+        "de": "<p><strong>Von:</strong> Google-Kontoteam &lt;no-reply@accounts.google.com&gt;</p>",
+        "ja": "<p><strong>差出人:</strong> Google アカウントチーム &lt;no-reply@accounts.google.com&gt;</p>",
+        "ko": "<p><strong>보낸 사람:</strong> Google 계정팀 &lt;no-reply@accounts.google.com&gt;</p>",
+        "no": "<p><strong>Fra:</strong> Google-kontoteamet &lt;no-reply@accounts.google.com&gt;</p>",
+        "ru": "<p><strong>От:</strong> Команда аккаунтов Google &lt;no-reply@accounts.google.com&gt;</p>"
+      },
+      "subject": {
+        "en": "<p><strong>Subject:</strong> Security alert: New sign-in on your Google Account</p>",
+        "ar": "<p><strong>الموضوع:</strong> تنبيه أمني: تسجيل دخول جديد إلى حساب Google الخاص بك</p>",
+        "de": "<p><strong>Betreff:</strong> Sicherheitswarnung: Neuer Anmeldeversuch bei Ihrem Google-Konto</p>",
+        "ja": "<p><strong>件名:</strong> セキュリティ警告：あなたの Google アカウントで新しいログインが検出されました</p>",
+        "ko": "<p><strong>제목:</strong> 보안 경고: Google 계정에 새 로그인 발생</p>",
+        "no": "<p><strong>Emne:</strong> Sikkerhetsvarsel: Ny pålogging på Google-kontoen din</p>",
+        "ru": "<p><strong>Тема:</strong> Оповещение безопасности: Новый вход в ваш аккаунт Google</p>"
+      },
+      "body": {
+        "en": "<p>Dear User,</p><p>We detected a suspicious sign-in attempt from a new location on your Google Account. As a security precaution, we have temporarily locked your account.</p><p>To restore full access, please confirm your identity by visiting the link below:</p><p><a href='/success' style='color: red;'>Verify your account</a></p><p>If no action is taken within 12 hours, your account may be permanently suspended.</p><p>Thank you,<br><strong>Google Security Team</strong></p>",
+        "ar": "<p>عزيزي المستخدم،</p><p>لقد اكتشفنا محاولة تسجيل دخول مشبوهة من موقع جديد على حساب Google الخاص بك. كإجراء احترازي، قمنا بقفل حسابك مؤقتًا.</p><p>لاستعادة الوصول الكامل، يرجى تأكيد هويتك من خلال زيارة الرابط أدناه:</p><p><a href='/success' style='color: red;'>تحقق من حسابك</a></p><p>إذا لم يتم اتخاذ إجراء خلال 12 ساعة، فقد يتم تعليق حسابك بشكل دائم.</p><p>شكرًا لك،<br><strong>فريق أمان Google</strong></p>",
+        "de": "<p>Sehr geehrter Nutzer,</p><p>Wir haben einen verdächtigen Anmeldeversuch von einem neuen Standort in Ihrem Google-Konto festgestellt. Als Sicherheitsmaßnahme wurde Ihr Konto vorübergehend gesperrt.</p><p>Um den vollständigen Zugriff wiederherzustellen, bestätigen Sie bitte Ihre Identität über den folgenden Link:</p><p><a href='/success' style='color: red;'>Bestätigen Sie Ihr Konto</a></p><p>Wenn Sie innerhalb von 12 Stunden nicht handeln, kann Ihr Konto dauerhaft gesperrt werden.</p><p>Vielen Dank,<br><strong>Google-Sicherheitsteam</strong></p>",
+        "ja": "<p>ユーザー様</p><p>Google アカウントへの新しい場所からの不審なログイン試行を検出しました。セキュリティ上の理由から、アカウントを一時的にロックしました。</p><p>完全なアクセスを回復するには、以下のリンクから本人確認を行ってください：</p><p><a href='/success' style='color: red;'>アカウントを確認する</a></p><p>12時間以内に対応がない場合、アカウントが永久に停止される可能性があります。</p><p>よろしくお願いいたします。<br><strong>Google セキュリティチーム</strong></p>",
+        "ko": "<p>사용자님께,</p><p>Google 계정에 새로운 위치에서 의심스러운 로그인 시도가 감지되었습니다. 보안 조치로 인해 계정이 일시적으로 잠겼습니다.</p><p>전체 액세스를 복구하려면 아래 링크를 통해 본인 확인을 진행해 주세요:</p><p><a href='/success' style='color: red;'>계정 확인</a></p><p>12시간 내에 조치하지 않으면 계정이 영구적으로 정지될 수 있습니다.</p><p>감사합니다,<br><strong>Google 보안팀</strong></p>",
+        "no": "<p>Kjære bruker,</p><p>Vi har oppdaget et mistenkelig påloggingsforsøk fra en ny lokasjon på Google-kontoen din. Som et sikkerhetstiltak har vi midlertidig låst kontoen din.</p><p>For å gjenopprette full tilgang, vennligst bekreft identiteten din via lenken nedenfor:</p><p><a href='/success' style='color: red;'>Bekreft kontoen din</a></p><p>Hvis ingen handling tas innen 12 timer, kan kontoen din bli permanent suspendert.</p><p>Takk,<br><strong>Google Sikkerhetsteam</strong></p>",
+        "ru": "<p>Уважаемый пользователь,</p><p>Мы обнаружили подозрительную попытку входа в ваш аккаунт Google с нового местоположения. В целях безопасности доступ к вашему аккаунту временно заблокирован.</p><p>Чтобы восстановить полный доступ, подтвердите свою личность по следующей ссылке:</p><p><a href='/success' style='color: red;'>Подтвердите аккаунт</a></p><p>Если вы не примете меры в течение 12 часов, ваш аккаунт может быть навсегда заблокирован.</p><p>Спасибо,<br><strong>Команда безопасности Google</strong></p>"
+      }
     },
     "sus_email": {
-        "from": {
-            "en": "<p><strong>From:</strong> Google Security &lt;no-reply@account-security.googlemail.co&gt;</p>"
-        },
-        "subject": {
-            "en": "<p><strong>Subject:</strong> Immediate Action Required: Unauthorized Login Attempt</p>"
-        },
-        "body": {
-            "en": "<p>Dear User,</p><p>We have noticed <strong>unauthorized activity</strong> on your Google account. For your safety, your account access is currently limited.</p><p>To <u>restore access immediately</u>, please verify your identity at the following link:</p><p><a href='/fail' style='color: red;'>Click here to secure your account</a></p><p><strong>Failure to act within 6 hours may result in permanent account deletion.</strong></p><p>Best regards,<br><strong>Google Account Support</strong></p>"
-        }
+      "from": {
+        "en": "<p><strong>From:</strong> Google Security &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "ar": "<p><strong>من:</strong> أمان Google &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "de": "<p><strong>Von:</strong> Google-Sicherheit &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "ja": "<p><strong>差出人:</strong> Google セキュリティ &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "ko": "<p><strong>보낸 사람:</strong> Google 보안 &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "no": "<p><strong>Fra:</strong> Google Sikkerhet &lt;no-reply@account-security.googlemail.co&gt;</p>",
+        "ru": "<p><strong>От:</strong> Безопасность Google &lt;no-reply@account-security.googlemail.co&gt;</p>"
+      },
+      "subject": {
+        "en": "<p><strong>Subject:</strong> Immediate Action Required: Unauthorized Login Attempt</p>",
+        "ar": "<p><strong>الموضوع:</strong> مطلوب إجراء فوري: محاولة تسجيل دخول غير مصرح بها</p>",
+        "de": "<p><strong>Betreff:</strong> Sofortige Aktion erforderlich: Unautorisierter Anmeldeversuch</p>",
+        "ja": "<p><strong>件名:</strong> 緊急対応が必要です：不正ログインの試み</p>",
+        "ko": "<p><strong>제목:</strong> 즉시 조치 필요: 무단 로그인 시도</p>",
+        "no": "<p><strong>Emne:</strong> Umiddelbar handling kreves: Uautorisert påloggingsforsøk</p>",
+        "ru": "<p><strong>Тема:</strong> Срочное действие требуется: Неавторизованная попытка входа</p>"
+      },
+      "body": {
+        "en": "<p>Dear User,</p><p>We have noticed <strong>unauthorized activity</strong> on your Google account. For your safety, your account access is currently limited.</p><p>To <u>restore access immediately</u>, please verify your identity at the following link:</p><p><a href='/fail' style='color: red;'>Click here to secure your account</a></p><p><strong>Failure to act within 6 hours may result in permanent account deletion.</strong></p><p>Best regards,<br><strong>Google Account Support</strong></p>",
+        "ar": "<p>عزيزي المستخدم،</p><p>لقد لاحظنا <strong>نشاطًا غير مصرح به</strong> في حساب Google الخاص بك. ولضمان سلامتك، تم تقييد الوصول إلى حسابك مؤقتًا.</p><p>لـ<u>استعادة الوصول على الفور</u>، يرجى التحقق من هويتك عبر الرابط التالي:</p><p><a href='/fail' style='color: red;'>انقر هنا لتأمين حسابك</a></p><p><strong>إذا لم يتم اتخاذ إجراء خلال 6 ساعات، فقد يتم حذف الحساب نهائيًا.</strong></p><p>مع أطيب التحيات،<br><strong>دعم حساب Google</strong></p>",
+        "de": "<p>Sehr geehrter Nutzer,</p><p>Wir haben <strong>unauthorisierte Aktivitäten</strong> in Ihrem Google-Konto festgestellt. Zu Ihrer Sicherheit wurde der Zugriff eingeschränkt.</p><p>Um den <u>Zugriff sofort wiederherzustellen</u>, bestätigen Sie bitte Ihre Identität über folgenden Link:</p><p><a href='/fail' style='color: red;'>Hier klicken, um Ihr Konto zu sichern</a></p><p><strong>Wenn Sie nicht innerhalb von 6 Stunden reagieren, kann Ihr Konto dauerhaft gelöscht werden.</strong></p><p>Mit freundlichen Grüßen,<br><strong>Google-Konto-Support</strong></p>",
+        "ja": "<p>ユーザー様</p><p>お客様の Google アカウントで<strong>不正なアクティビティ</strong>が検出されました。安全のため、現在アカウントへのアクセスは制限されています。</p><p><u>すぐにアクセスを復元するには</u>、以下のリンクで本人確認を行ってください：</p><p><a href='/fail' style='color: red;'>アカウントを保護するにはこちらをクリック</a></p><p><strong>6時間以内に対応しない場合、アカウントは永久に削除される可能性があります。</strong></p><p>よろしくお願いいたします。<br><strong>Google アカウントサポート</strong></p>",
+        "ko": "<p>사용자님께,</p><p>Google 계정에서 <strong>무단 활동</strong>이 감지되었습니다. 보안을 위해 계정 접근이 제한되었습니다.</p><p><u>즉시 접근을 복원하려면</u>, 아래 링크에서 본인 확인을 해주세요:</p><p><a href='/fail' style='color: red;'>계정 보호를 위해 여기를 클릭하세요</a></p><p><strong>6시간 이내에 조치하지 않으면 계정이 영구 삭제될 수 있습니다.</strong></p><p>감사합니다,<br><strong>Google 계정 지원팀</strong></p>",
+        "no": "<p>Kjære bruker,</p><p>Vi har lagt merke til <strong>uautorisert aktivitet</strong> på Google-kontoen din. For din sikkerhet er tilgangen din midlertidig begrenset.</p><p>For å <u>gjenopprette tilgang umiddelbart</u>, vennligst bekreft identiteten din via lenken nedenfor:</p><p><a href='/fail' style='color: red;'>Klikk her for å sikre kontoen din</a></p><p><strong>Hvis du ikke handler innen 6 timer, kan kontoen bli permanent slettet.</strong></p><p>Vennlig hilsen,<br><strong>Google Kontostøtte</strong></p>",
+        "ru": "<p>Уважаемый пользователь,</p><p>Мы заметили <strong>неавторизованную активность</strong> в вашем аккаунте Google. В целях вашей безопасности доступ к аккаунту временно ограничен.</p><p>Чтобы <u>немедленно восстановить доступ</u>, подтвердите свою личность по ссылке ниже:</p><p><a href='/fail' style='color: red;'>Нажмите здесь, чтобы защитить аккаунт</a></p><p><strong>Если не предпринять действий в течение 6 часов, аккаунт может быть навсегда удалён.</strong></p><p>С уважением,<br><strong>Поддержка аккаунтов Google</strong></p>"
+      }
     },
     "sus": {
-        "en": "This one is suspicious..."
+        "en": "This one is suspicious...",
+        "ar": "هذا يبدو مريبًا...",
+        "de": "Das hier ist verdächtig...",
+        "ja": "これは怪しいですね…",
+        "ko": "이건 의심스러워요...",
+        "no": "Denne virker mistenkelig...",
+        "ru": "Это подозрительно..."
     },
     "correct": {
-        "en": "Your insticts were CORRECT!"
+        "en": "Your insticts were CORRECT!",
+        "ar": "كان حدسك صائبًا!",
+        "de": "Dein Instinkt war RICHTIG!",
+        "ja": "あなたの直感は正しかった！",
+        "ko": "당신의 직감이 맞았어요!",
+        "no": "Instinktene dine var RIKTIGE!",
+        "ru": "Ваши инстинкты были ПРАВИЛЬНЫ!"
     },
     "diploma": {
-        "en": "Congratulations! For successfully completing the course and demonstrating your new knowledge about cybersecurity and online safety, you are awarded this diploma. Stay vigilant and keep your digital world secure!"
+        "en": "Congratulations! For successfully completing the course and demonstrating your new knowledge about cybersecurity and online safety, you are awarded this diploma. Stay vigilant and keep your digital world secure!",
+        "ar": "مبروك! نظرًا لإكمالك الدورة بنجاح وإثبات معرفتك الجديدة بالأمن السيبراني والسلامة على الإنترنت، يتم منحك هذه الشهادة. كن يقظًا وواصل تأمين عالمك الرقمي!",
+        "de": "Herzlichen Glückwunsch! Für das erfolgreiche Absolvieren des Kurses und das Demonstrieren deines neuen Wissens über Cybersicherheit und Online-Sicherheit erhältst du dieses Diplom. Bleib wachsam und schütze deine digitale Welt!",
+        "ja": "おめでとうございます！このコースを修了し、サイバーセキュリティとオンラインの安全性についての新しい知識を示してくれたあなたに、この修了証書を授与します。今後も警戒を怠らず、デジタルの世界を安全に保ちましょう！",
+        "ko": "축하합니다! 사이버 보안과 온라인 안전에 대한 새로운 지식을 입증하며 과정을 성공적으로 마친 것을 축하하며, 이 수료증을 드립니다. 경계를 늦추지 말고 디지털 세계를 안전하게 지키세요!",
+        "no": "Gratulerer! For å ha fullført kurset og demonstrert din nye kunnskap om cybersikkerhet og nettrygghet, tildeles du dette diplomet. Vær årvåken og hold den digitale verdenen din trygg!",
+        "ru": "Поздравляем! За успешное прохождение курса и демонстрацию новых знаний в области кибербезопасности и онлайн-безопасности вы получаете этот диплом. Оставайтесь бдительными и защищайте свой цифровой мир!"
     },
     "go_home": {
-        "en": "Go Home"
+      "en": "Go Home",
+      "ar": "العودة إلى الصفحة الرئيسية",
+      "de": "Zur Startseite",
+      "ja": "ホームに戻る",
+      "ko": "홈으로 가기",
+      "no": "Gå til Hjem",
+      "ru": "Вернуться на главную"
     },
+
     "failed": {
-        "en": "You FAILED, learn why:"
+      "en": "You FAILED, learn why:",
+      "ar": "لقد فشلت، تعرّف على السبب:",
+      "de": "Du hast VERSAGT, erfahre warum:",
+      "ja": "失敗しました、理由を確認してください：",
+      "ko": "실패했습니다. 그 이유를 알아보세요:",
+      "no": "Du FEILET, lær hvorfor:",
+      "ru": "Вы ПРОВАЛИЛИ задание, узнайте почему:"
     },
     "fail_explained": {
       "rows": [
         {
           "A": {
-            "en": "Sender Address: no-reply@account-security.googlemail.co – fake or misleading domain."
+            "en": "Sender Address: no-reply@account-security.googlemail.co – fake or misleading domain.",
+            "ar": "عنوان المرسل: no-reply@account-security.googlemail.co – نطاق مزيف أو مضلل.",
+            "de": "Absenderadresse: no-reply@account-security.googlemail.co – gefälschte oder irreführende Domain.",
+            "ja": "送信者アドレス：no-reply@account-security.googlemail.co – 偽または誤解を招くドメイン。",
+            "ko": "보낸 사람 주소: no-reply@account-security.googlemail.co – 가짜 또는 오해를 유발하는 도메인.",
+            "no": "Avsenderadresse: no-reply@account-security.googlemail.co – falsk eller misvisende domene.",
+            "ru": "Адрес отправителя: no-reply@account-security.googlemail.co – поддельный или вводящий в заблуждение домен."
           },
           "B": {
-            "en": "Sender Address: no-reply@accounts.google.com – appears to be a legitimate Google domain."
+            "en": "Sender Address: no-reply@accounts.google.com – appears to be a legitimate Google domain.",
+            "ar": "عنوان المرسل: no-reply@accounts.google.com – يبدو أنه نطاق جوجل شرعي.",
+            "de": "Absenderadresse: no-reply@accounts.google.com – scheint eine legitime Google-Domain zu sein.",
+            "ja": "送信者アドレス：no-reply@accounts.google.com – 正当なGoogleドメインのように見えます。",
+            "ko": "보낸 사람 주소: no-reply@accounts.google.com – 합법적인 구글 도메인으로 보입니다.",
+            "no": "Avsenderadresse: no-reply@accounts.google.com – ser ut som et legitimt Google-domene.",
+            "ru": "Адрес отправителя: no-reply@accounts.google.com – похоже на легитимный домен Google."
           }
         },
         {
           "A": {
-            "en": "Subject Line: “Immediate Action Required” – uses urgent, alarming language."
+            "en": "Subject Line: “Immediate Action Required” – uses urgent, alarming language.",
+            "ar": "سطر الموضوع: “مطلوب إجراء فوري” – يستخدم لغة عاجلة ومقلقة.",
+            "de": "Betreffzeile: „Sofortige Aktion erforderlich“ – verwendet dringende, alarmierende Sprache.",
+            "ja": "件名：「至急対応が必要です」– 緊急性や警戒感のある表現を使用。",
+            "ko": "제목: “즉각적인 조치가 필요합니다” – 긴급하고 불안감을 조성하는 표현 사용.",
+            "no": "Emnelinje: “Umiddelbar handling kreves” – bruker hastende og alarmerende språk.",
+            "ru": "Тема письма: «Требуется немедленное действие» – используется срочная и тревожная формулировка."
           },
           "B": {
-            "en": "Subject Line: “Security alert: New sign-in…” – more neutral and informative."
+            "en": "Subject Line: “Security alert: New sign-in…” – more neutral and informative.",
+            "ar": "سطر الموضوع: “تنبيه أمني: تسجيل دخول جديد…” – أكثر حيادية ومعلوماتية.",
+            "de": "Betreffzeile: „Sicherheitswarnung: Neuer Login…“ – neutraler und informativer.",
+            "ja": "件名：「セキュリティ警告：新しいログイン…」– より中立的で情報的。",
+            "ko": "제목: “보안 알림: 새 로그인…” – 보다 중립적이고 정보 중심적.",
+            "no": "Emnelinje: “Sikkerhetsvarsel: Ny pålogging…” – mer nøytral og informativ.",
+            "ru": "Тема письма: «Оповещение безопасности: новый вход…» – более нейтральная и информативная."
           }
         },
         {
           "A": {
-            "en": "Tone: Threatening and urgent – uses phrases like “Failure to act within 6 hours…” to create fear."
+            "en": "Tone: Threatening and urgent – uses phrases like “Failure to act within 6 hours…” to create fear.",
+            "ar": "النغمة: تهديدية وعاجلة – تستخدم عبارات مثل “عدم التصرف خلال 6 ساعات…” لإثارة الخوف.",
+            "de": "Ton: Drohend und dringend – verwendet Sätze wie „Versäumnis innerhalb von 6 Stunden zu handeln…“ um Angst zu erzeugen.",
+            "ja": "口調：脅迫的かつ緊急 – 「6時間以内に対応しなければ…」などの恐怖を煽る表現を使用。",
+            "ko": "어조: 위협적이고 긴박함 – “6시간 내 조치하지 않으면…”과 같은 문구로 공포 유발.",
+            "no": "Tone: Truende og hastende – bruker uttrykk som “Manglende handling innen 6 timer…” for å skape frykt.",
+            "ru": "Тон: Угрожающий и срочный – использует фразы вроде «Если не отреагировать в течение 6 часов…» чтобы вызвать страх."
           },
           "B": {
-            "en": "Tone: Calm and procedural – informs the user without creating panic."
+            "en": "Tone: Calm and procedural – informs the user without creating panic.",
+            "ar": "النغمة: هادئة وإجرائية – تُعلِم المستخدم دون إثارة الذعر.",
+            "de": "Ton: Ruhig und sachlich – informiert den Nutzer ohne Panik zu erzeugen.",
+            "ja": "口調：落ち着いており手続き的 – パニックを引き起こすことなくユーザーに伝える。",
+            "ko": "어조: 차분하고 절차적 – 공포를 조성하지 않고 사용자에게 안내함.",
+            "no": "Tone: Rolig og prosedyremessig – informerer brukeren uten å skape panikk.",
+            "ru": "Тон: Спокойный и деловой – информирует пользователя без паники."
           }
         },
         {
           "A": {
-            "en": "Link Text: “Click here to secure your account” – overly dramatic and highlighted in red."
+            "en": "Link Text: “Click here to secure your account” – overly dramatic and highlighted in red.",
+            "ar": "نص الرابط: “انقر هنا لتأمين حسابك” – مبالغ فيه ومميز باللون الأحمر.",
+            "de": "Linktext: „Hier klicken, um Ihr Konto zu sichern“ – übertrieben dramatisch und rot hervorgehoben.",
+            "ja": "リンクテキスト：「ここをクリックしてアカウントを保護」– 大げさで赤く強調されている。",
+            "ko": "링크 텍스트: “계정을 보호하려면 여기를 클릭하세요” – 지나치게 극적이고 빨간색 강조.",
+            "no": "Lenketekst: “Klikk her for å sikre kontoen din” – overdreven dramatisk og markert i rødt.",
+            "ru": "Текст ссылки: «Нажмите здесь, чтобы защитить свой аккаунт» – слишком драматичный, выделен красным."
           },
           "B": {
-            "en": "Link Text: “Verify your account” – neutral and standard phrasing."
+            "en": "Link Text: “Verify your account” – neutral and standard phrasing.",
+            "ar": "نص الرابط: “تحقق من حسابك” – صياغة حيادية وعادية.",
+            "de": "Linktext: „Bestätigen Sie Ihr Konto“ – neutrale und standardmäßige Formulierung.",
+            "ja": "リンクテキスト：「アカウントを確認する」– 中立的で標準的な表現。",
+            "ko": "링크 텍스트: “계정 확인” – 중립적이고 일반적인 표현.",
+            "no": "Lenketekst: “Bekreft kontoen din” – nøytralt og standard språk.",
+            "ru": "Текст ссылки: «Подтвердите свой аккаунт» – нейтральная и стандартная формулировка."
           }
         },
         {
           "A": {
-            "en": "Formatting: Uses bold, red text, and emphasis to increase urgency."
+            "en": "Formatting: Uses bold, red text, and emphasis to increase urgency.",
+            "ar": "التنسيق: يستخدم نصًا غامقًا وأحمرًا لتسليط الضوء على الإلحاح.",
+            "de": "Formatierung: Verwendet fettgedruckten, roten Text zur Erzeugung von Dringlichkeit.",
+            "ja": "書式：太字と赤文字を使って緊急性を強調。",
+            "ko": "서식: 굵은 빨간 텍스트로 긴박함 강조.",
+            "no": "Formatering: Bruker fet, rød tekst for å øke følelsen av hast.",
+            "ru": "Форматирование: Используется жирный красный текст для усиления срочности."
           },
           "B": {
-            "en": "Formatting: Professional and consistent without excessive styling."
+            "en": "Formatting: Professional and consistent without excessive styling.",
+            "ar": "التنسيق: احترافي ومتناسق بدون مبالغة في الأسلوب.",
+            "de": "Formatierung: Professionell und konsistent ohne übermäßige Gestaltung.",
+            "ja": "書式：過剰な装飾のないプロフェッショナルで一貫性のある形式。",
+            "ko": "서식: 과도한 스타일링 없이 전문적이고 일관됨.",
+            "no": "Formatering: Profesjonell og konsistent uten overdreven styling.",
+            "ru": "Форматирование: Профессиональное и последовательное, без излишеств."
           }
         }
       ]
     },
+
     "retry": {
-        "en": "Retry"
+      "en": "Retry",
+      "ar": "إعادة المحاولة",
+      "de": "Erneut versuchen",
+      "ja": "再試行",
+      "ko": "다시 시도",
+      "no": "Prøv igjen",
+      "ru": "Повторить"
     }
+
 }

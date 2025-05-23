@@ -2,6 +2,7 @@
 
 
 Installer Packages (dette gjøres før start-up):
+i ER_DU_KLAR/redis-frontend OG ER_DU_KLAR/redis-backend
 ``bash
 npm i
 ``

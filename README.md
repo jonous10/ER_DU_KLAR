@@ -1,5 +1,6 @@
 # ER_DU_KLAR
 
+Når du skal teste på localhost så trenger du ikke å starte opp backend delen, ignorer redis-backend på de under:
 
 Installer Packages (dette gjøres før start-up):
 i ER_DU_KLAR/redis-frontend OG ER_DU_KLAR/redis-backend

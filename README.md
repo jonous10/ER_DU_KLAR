@@ -1,7 +1,7 @@
 # ER_DU_KLAR
 
 
-Installer Packages:
+Installer Packages (dette gjøres før start-up):
 ``bash
 npm i
 ``
@@ -14,4 +14,4 @@ i ER_DU_KLAR/redis-frontend OG ER_DU_KLAR/redis-backend
 npm run dev
 ``
 
-Logg Inn systemet fungerer bare gjennom docker, som jeg Jon Filip må starte opp
+Logg Inn systemet fungerer bare gjennom docker, som jeg, Jon Filip må starte opp. Derfor går ikke backend delen (logg inn systemet) til å fungere.
